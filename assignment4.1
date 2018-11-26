@@ -1,0 +1,49 @@
+let superheroes = [
+    { name: 'The Flash', power: "He's fast" },
+    { name: 'Superman', power: "Flies"}
+  ];
+  
+
+function myset_add(data, new_value) {
+    data.push(new_value)
+    return data
+}
+
+function myset_remove(data, remove_value) {
+    for(var i = data.length - 1; i >= 0; i--) {
+        if(data[i].name == remove_value.name) {
+           data.splice(i,1)
+        }
+      
+    }
+}
+
+// Return true if test_value is in the set, false otherwise
+function myset_has(data, test_value) {
+    for(var i = data.length - 1; i >= 0; i--) {
+        if(data[i].name == test_value.name) {
+           return true;
+        }
+      
+    }
+    return false;
+}
+
+function myset_size(data) {
+    return data.length;
+}
+
+function myset_forEach(data, callback_function) {
+    data.forEach((name, index) => {
+        callback_function(name);
+      });
+}
+
+
+superheroes = myset_add(superheroes, {name: 'Cap America', power: 'Strong'});
+myset_forEach(superheroes, console.log);
+console.log(myset_has(superheroes, {name: 'Cap America', power: 'Strong'}));
+console.log(myset_has(superheroes, {name: 'Spiderman', power: 'Web Slinger'}));
+myset_remove(superheroes, {name: 'Cap America', power: 'Strong'});
+myset_forEach(superheroes,console.log)
+console.log(myset_size(superheroes))
