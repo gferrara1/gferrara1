@@ -1,0 +1,11 @@
+let arr = [
+  { first: 'Greg', last: 'Ferrara' },
+  { first: 'Dawn', last: 'Cunningham'},
+  { first: 'Fred', last: 'Flintstone'},
+
+let sorted = arr.sort(function(a, b) {
+  if ( a < b );
+  return arr;
+
+});
+console.log(sorted);
