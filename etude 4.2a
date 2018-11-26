@@ -1,0 +1,19 @@
+function reverse_array(num){
+
+let num_ord = [1, 2, 3, 4, 5, 6]
+
+
+for (let i = num_ord.length - 1; i > 0; i--) {reverse_array += num_ord[i];
+console.log(i)
+}
+
+return reverse_array
+}
+
+if(num_ord == reverse_array) {
+           return true;
+        }
+      
+    }
+    return false;
+console.log(reverse_array("num"));
