@@ -1,0 +1,75 @@
+
+<html>
+
+<head>
+    <title>Music DB</title>
+</head>
+
+<body>
+    <H1>Details</H1>
+    <p id="details"></p>
+    <H1>Album List</H1>
+    <p id="songlist"></p>
+
+    <script>
+        document.getElementById("songlist").innerHTML = "Hello JavaScript!";
+        let songs = [
+            {
+                title: "Getting Away with It (All Messed Up)",
+                artist: "James",
+                album: "Pleased to Meet You",
+                year: 2001,
+                art: "https://upload.wikimedia.org/wikipedia/en/2/2a/JamesPleasedToMeetYou.jpg"
+            },
+            {
+                title: "Renaissance Affair",
+                artist: "Hooverphonic",
+                album: "Blue Wonder Power Milk",
+                year: 1998,
+                art: "https://upload.wikimedia.org/wikipedia/en/1/17/Hooverphonic-Blue_Wonder_Power_Milk.jpg"
+            },
+            {
+                title: "White Nights",
+                artist: "Oh Land",
+                album: "Oh Land",
+                year: 2011,
+                art: "https://upload.wikimedia.org/wikipedia/en/6/68/Oh_Land_%28album%29.png"
+            },
+            {
+                title: "Subdivisions",
+                artist: "Rush",
+                album: "Signals",
+                art: "https://upload.wikimedia.org/wikipedia/en/6/63/Rush_Signals.jpg"
+
+            }
+        ]
+        var dhtml = "";
+        function init() {
+            dhtml += "<table>"
+            for (s in songs) {
+               
+                
+               dhtml += "<tr><td><a href='#' onclick=presentdetail('" + songs[s].art + "') ><img id='clikme' src='" + songs[s].art + "' height=150 width=150/></a></td></tr>"
+               //dhtml += "<tr><td>"+ img.innerHTML +"</td></tr>"
+            }
+            dhtml += "</table>"
+            //document.getElementById("details").innerText = dhtml;
+        }
+        init();
+        document.getElementById("songlist").innerHTML = dhtml
+
+        function presentdetail(value) //presents as a namespace
+        {
+            for (var i = 0; i < songs.length; i++) {
+                if (songs[i].art == value) {
+                    var mydetails = "";
+                    mydetails = "<h2>" + songs[i].title + "</h2><h3>" + songs[i].album + "<h3><h3>" + songs[i].artist + "</h3>"
+                    document.getElementById("details").innerHTML = mydetails;
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
