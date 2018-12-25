@@ -1,0 +1,14 @@
+var url = 'https://newsapi.org/v2/top-headlines?' +
+           'country=us&' +
+           'apiKey=    ;
+
+
+
+        const request = require("request");
+        request(url, function(err, res, body) {
+            if(!err && res.statusCode == 200) { // Successful response
+                console.log(body); // Displays the response from the API
+            } else {
+                console.log(err);
+            }
+        })
