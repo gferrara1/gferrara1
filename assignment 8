@@ -1,0 +1,56 @@
+CREATE TABLE [dbo].[Act](
+[id] [nchar](10) NULL,
+[ActName] [nchar](30) NULL,
+[Genre] [int] NULL
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[Genre](
+[id] [nchar](10) NULL,
+[Genre] [nchar](10) NULL
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[Person](
+[id] [int] NOT NULL,
+[firstname] [nchar](20) NULL,
+[middlename] [nchar](20) NULL,
+[lastname] [nchar](200) NULL
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[Personact](
+[id] [int] NULL,
+[Person] [int] NULL,
+[Act] [int] NULL
+) ON [PRIMARY]
+GO
+INSERT [dbo].[Act] ([id], [ActName], [Genre]) VALUES (N'1         ', N'Prince                        ', 3)
+GO
+INSERT [dbo].[Act] ([id], [ActName], [Genre]) VALUES (N'2         ', N'Eagles                        ', 2)
+GO
+INSERT [dbo].[Act] ([id], [ActName], [Genre]) VALUES (N'3         ', N'Glen Fry                      ', 2)
+GO
+INSERT [dbo].[Genre] ([id], [Genre]) VALUES (N'1         ', N'Pop       ')
+GO
+INSERT [dbo].[Genre] ([id], [Genre]) VALUES (N'2         ', N'Rock      ')
+GO
+INSERT [dbo].[Genre] ([id], [Genre]) VALUES (N'3         ', N'Funk      ')
+GO
+INSERT [dbo].[Genre] ([id], [Genre]) VALUES (N'4         ', N'Soul      ')
+GO
+INSERT [dbo].[Person] ([id], [firstname], [middlename], [lastname]) VALUES (1, N'Prince              ', N'Rogers              ', N'Nelson                                                                                                                                                                                                  ')
+GO
+INSERT [dbo].[Person] ([id], [firstname], [middlename], [lastname]) VALUES (2, N'Glen                ', N'Lewis               ', N'Fry                                                                                                                                                                                                     ')
+GO
+INSERT [dbo].[Personact] ([id], [Person], [Act]) VALUES (1, 1, 1)
+GO
+INSERT [dbo].[Personact] ([id], [Person], [Act]) VALUES (2, 2, 2)
+GO
+INSERT [dbo].[Personact] ([id], [Person], [Act]) VALUES (3, 2, 3)
+GO
+INSERT [dbo].[Personact] ([id], [Person], [Act]) VALUES (4, 3, 2)
+GO
