@@ -1,0 +1,78 @@
+
+<html>
+    <head>
+        <title>
+            Lorum Dialecticus
+        </title>
+    </head>
+    <body>
+
+        <h1>
+                Lorem Ipsum Erat Tritani Signiferumque
+        </h1>
+        <h2>
+          <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+var url = 'https://newsapi.org/v2/top-headlines?' +
+           'country=us&' +
+           'apiKey=7c8c1b54fa724a1c9714300d66ed60e5';
+var url = 'https://newsapi.org/v2/top-headlines?'' +
+          country=ca&apiKey=API_KEY
+var url = 'https://newsapi.org/v2/top-headlines?'
+          sources=bbc-news&apiKey=API_KEY
+            Et hoc non est satis Latine
+        </h2>
+        <p>
+                <img src='https://upload.wikimedia.org/wikipedia/commons/2/24/%27David%27_by_Michelangelo_JBU0001.JPG' align="right" alt="Dave" width="280" /><a href='https://en.wikipedia.org/wiki/Lorem_ipsum' target='_blank'>Lorem ipsum</a> dolor sit amet, per etiam vituperatoribus ei, pri no tantas causae laboramus. Erat tritani signiferumque ne sit. Ut cum wisi dicta admodum, in eius eligendi per. Decore aperiri apeirian ne est, essent omnesque ea est, deleniti maluisset quo an. Est no posse ornatus ponderum, nostro regione his ad.</p>
+                <h3>Sumo Cum Nomo</h3>
+                <ul>
+                    <li>Mea eu augue evertitur dissentiunt, vis eripuit pertinax ex.</li>
+                    <li>Ut est putent petentium cotidieque.<ol><li>primi</li><li>secundi</li><li>tertium</li></ol></li>
+                    <li>Ex cum sumo tincidunt definitiones, an accusam adolescens nec.</li>
+
+                </ul>   Vim possim animal veritus an, te primis fuisset consulatu nam.
+
+                <p>Mel nobis interesset an. Nam novum eirmod te. Ei torquatos dissentiunt mediocritatem vis, at placerat principes vel. Ea dico accusamus eam, mei ei tollit euismod, paulo ponderum ea vel. No eum detraxit recteque erroribus. Te tibique quaestio intellegat sea, ad his oporteat explicari, ut debet eligendi ius.</p>
+
+                <p>Ad his tale denique complectitur. Quot tamquam constituam ex sit. Eos illum simul oratio id, id pro aliquid apeirian neglegentur. Nec ea quis purto periculis, nec saepe putant adversarium in. Sed at autem deseruisse, ad vide suavitate consequat mel.</p>
+
+                <h2>
+                    Qui iam re noli tradere-codice markuo
+                </h2>
+
+                <p>Eos exerci dolore tritani et, ei per altera deseruisse. Te sea ullamcorper consectetuer, nonumes vivendo mei ad. Eu malorum inermis consulatu vim. Ex dicta possim eum, at vim oblique hendrerit consectetuer, at pro ignota disputando. Mazim facilisi ea eam, his illud bonorum molestiae et.</p>
+
+
+                <table>
+                    <tr>
+                        <td>
+                                <b>Primis</b></td>
+                        <td>
+                                <b>secundi</b></td>
+                        <td>
+                            <b>tertium</b></td>
+                    </tr>
+                    <tr>
+                        <td>Id vis integre voluptaria repudiandae. Per te dicta efficiantur. Cum ei magna ignota feugiat, fugit tamquam ad usu. Ea sit sumo ceteros, te vix luptatum definitionem. Habeo prompta legendos cu sea, no mei graece vocent qualisque. Vel discere lobortis explicari eu.</td>
+                        <td>Ut omnes nullam tincidunt his, et mel aeterno docendi, cu vel aliquam principes cotidieque. Ei quo veniam timeam. Cum in viderer salutandi, ex ius agam volutpat. In essent numquam adversarium pro, vim ad apeirian praesent. Albucius probatus pri ea, ut choro graecis molestiae sea. Semper repudiandae cum no, mel ex illum phaedrum, no sed lorem feugiat vituperata. Alii falli quo ut, in usu elit quidam adversarium.</td>
+                        <td>Ne ius omnis utinam postea. Prompta maluisset nec eu, ex mea nemore fastidii percipitur, has id augue graeci. Ne debet veniam oportere mei. Eu ius malis debet deleniti, no per vidisse instructior. In illum dolores cum, pro ut dignissim honestatis.</td>
+                    </tr>
+                </table>
+
+
+
+
+
+                <P>An adipisci tacimates quo, oratio consequuntur ius ut. Ea est magna maiorum, ad debet inciderint usu. Illum albucius molestie ea sit, sint deleniti facilisi nam ad. Vix in homero tamquam nostrud, summo elaboraret eu vel. At pro nisl audiam legendos, solet eirmod ut vim, eros minimum quo ex. Qui persius suscipit vulputate an, eam quas putant dictas ne.</P>
+
+                <p>Eos in omnium singulis dissentiet. No vel luptatum patrioque quaerendum, vis enim instructior an. Ex mea tation prodesset, ne ullum reformidans cum, vix eius sensibus sapientem et. Utinam debitis et sit. His ut quot recteque, habeo corrumpit sit at.</p>
+        </p>
+        <a href='mailto:noreply@gmail.com'>Contact US...</a>
+    </body>
+</html>
