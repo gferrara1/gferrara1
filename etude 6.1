@@ -1,0 +1,86 @@
+
+const jasmine = require("jasmine");
+
+class MyTime {
+
+
+    constructor(Time) {
+        var result = Time.split(":");
+        let minDate = new Date('1970-01-01Z00:00:00:000');
+        //
+        this.d = minDate;
+        this.d.setHours(result[0]);
+        this.d.setMinutes(result[1]);
+        this.d.setSeconds(result[2]);
+    }
+
+    toString() {
+        return MyTime.dateToString(this.d);
+    }
+
+    static dateToString(datevalue) {
+        return datevalue.getHours() + ":" + datevalue.getMinutes() + ":" + datevalue.getSeconds();
+    }
+
+    static Compare(d1, d2) {
+        if (d1.d.getTime() === d2.d.getTime()) {
+            return 0;
+        }
+        if (d1.d.getTime() > d2.d.getTime()) {
+            return -1
+        }
+        if (d1.d.getTime() < d2.d.getTime()) {
+            return 1
+        }
+    }
+
+    isInBetween(d1, d2) {
+        let inBetween = false;
+        let midnight = new MyTime("0:0:0")
+
+        if (this.d.getTime() > d1.d.getTime() && this.d.getTime() < d2.d.getTime()) {
+            inBetween = true;
+        }
+        let lessthanmidnight = new Date(midnight.d.getTime() - 1);
+        if (this.d.getTime() > d1.d.getTime() && inBetween == false) {
+
+            return this.isInBetween(d1, new MyTime(MyTime.dateToString(lessthanmidnight)));
+        }
+
+        if (inBetween == false && this.d.getTime() < d2.d.getTime()) {
+
+            return this.isInBetween(new MyTime(MyTime.dateToString(new Date(midnight.d.getTime()))), d2);
+        }
+
+        return inBetween;
+    }
+
+
+}
+
+module.exports = MyTime
+
+//Class demonstration...
+let timeomatic = new MyTime("22:41:15");
+MyTime.dateToString(timeomatic.d)
+console.log(timeomatic.toString());
+let alternativeTime = new MyTime("2:47:15");
+var val = MyTime.Compare(timeomatic, alternativeTime);
+console.log(val);
+let alternativeTime2 = new MyTime("1:43:25")
+var whatisit = alternativeTime2.isInBetween(timeomatic, alternativeTime)
+console.log(whatisit)
+
+var tests = new jasmine();
+
+//Unit Tests
+describe("Time test suite...", function () {
+    var intime = "22:41:15"
+    it("Does a time equal a time?"), function () {
+        expect(MyTime.dateToString(intime)).toBe(intime);
+    }
+    it("Is it midnight", function () {
+        expect(MyTime.Compare(intime, midnight)).toBe(1)
+    }
+    )
+})
